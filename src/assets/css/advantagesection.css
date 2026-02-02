@@ -1,0 +1,95 @@
+.advantage {
+  padding: 80px 0;
+  background: #000000;
+}
+
+.advantage .head {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 87px;
+  color: #ffffff;
+  margin-bottom: 80px;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantage .head::after {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  content: "";
+  width: 290px;
+  height: 9px;
+  background: rgb(81, 212, 255);
+  border-radius: 5px;
+}
+
+.advantage .list {
+  width: 1240px;
+  height: 696px;
+  margin: 60px auto 0;
+  position: relative;
+}
+
+.advantage .item {
+  position: absolute;
+  width: 518px;
+  height: 293px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.advantage .item:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.advantage .item:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.advantage .item:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.advantage .item:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+.advantage .item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.advantage .item .title {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.advantage .item .msg {
+  position: absolute;
+  top: 105px;
+  left: 30px;
+  right: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #D9D9D9;
+  line-height: 1.5;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}

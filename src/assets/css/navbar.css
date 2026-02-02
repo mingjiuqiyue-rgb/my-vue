@@ -1,0 +1,92 @@
+.nav-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  transition: padding 0.3s ease;
+  padding: 0 5px;
+  max-width: 1400px;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav_logo img {
+  max-height: 93px;
+  width: auto;
+}
+
+.nav_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  flex: 1;
+  gap: 20px;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.nav_link a {
+  text-decoration: none;
+  color: white;
+  background-color: #1A70FF;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.nav_link a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.nav_link a:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+
+.nav_link a div {
+  position: relative;
+  z-index: 2;
+}
+
+.nav_link .btn1,
+.nav_link .btn2,
+.nav_link .btn3,
+.nav_link .btn4 {
+  white-space: nowrap;
+}
