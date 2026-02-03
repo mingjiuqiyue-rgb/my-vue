@@ -9,7 +9,7 @@
         <div class="description">
           1套软件批量管理N个多渠道社媒平台账号，精准触达全球精准客户，各个行业/国家/地区
         </div>
-        <div class="btn"><div>免费预约体验</div></div>
+        <a href="#" class="btn">免费预约体验</a>
       </div>
       <div class="right">
         <div class="fade">
