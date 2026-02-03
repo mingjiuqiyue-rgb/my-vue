@@ -90,18 +90,12 @@
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.3);
   transform: translate(-50%, -50%) scale(0);
-  transform-origin: center;
   transition: transform 0.4s ease;
   z-index: -1;
 }
 
 .box1 .btn:hover::before {
   transform: translate(-50%, -50%) scale(4);
-}
-
-.box1 .btn div {
-  position: relative;
-  z-index: 2;
 }
 
 .box1 .right {
