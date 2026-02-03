@@ -1,0 +1,801 @@
+/* 响应式适配 - 从大到小 */
+
+/* 超大屏幕 (1920px+) - 默认样式已覆盖 */
+
+/* 大屏幕 (1440px - 1920px) */
+@media screen and (max-width: 1920px) {
+  .box1 .container {
+    width: 1600px;
+    margin: 0 auto;
+    padding: 0 50px;
+    gap: 120px;
+  }
+  
+  .box1 .left {
+    width: 700px;
+  }
+  
+  .box1 .right {
+    width: 720px;
+    height: 560px;
+  }
+  
+  /* 调整图标位置 - 720px宽×560px高 */
+  .box1 .app1 { width: 80px; height: 80px; left: 216px; top: 192px; }
+  .box1 .app2 { width: 96px; height: 96px; left: 200px; top: 376px; }
+  .box1 .app3 { width: 96px; height: 96px; left: 272px; top: 248px; }
+  .box1 .app4 { width: 96px; height: 96px; left: 416px; top: 368px; }
+  .box1 .app5 { width: 96px; height: 96px; left: 96px; top: 240px; }
+  .box1 .app6 { width: 96px; height: 96px; left: 144px; top: 112px; }
+  .box1 .app7 { width: 120px; height: 120px; left: 464px; top: 224px; }
+  .box1 .app8 { width: 96px; height: 96px; left: 400px; top: 120px; }
+  .box1 .app9 { width: 82px; height: 57px; left: 376px; top: 304px; }
+  
+  .advantage .list {
+    width: 1100px;
+    height: 620px;
+  }
+  
+  .advantage .item {
+    width: 460px;
+    height: 260px;
+  }
+  
+  .why-chose-us .content {
+    width: 1400px;
+  }
+}
+
+/* 中等屏幕 (1024px - 1440px) */
+@media screen and (max-width: 1440px) {
+  .box1 .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 80px;
+  }
+  
+  .box1 .left {
+    width: 520px;
+  }
+  
+  .box1 .right {
+    width: 560px;
+    height: 470px;
+  }
+  
+  /* 调整图标位置以适应缩小的容器 - 560px宽×470px高 */
+  .box1 .app1 { width: 62px; height: 62px; left: 168px; top: 161px; }
+  .box1 .app2 { width: 75px; height: 75px; left: 156px; top: 316px; }
+  .box1 .app3 { width: 75px; height: 75px; left: 212px; top: 208px; }
+  .box1 .app4 { width: 75px; height: 75px; left: 324px; top: 309px; }
+  .box1 .app5 { width: 75px; height: 75px; left: 75px; top: 201px; }
+  .box1 .app6 { width: 75px; height: 75px; left: 112px; top: 94px; }
+  .box1 .app7 { width: 93px; height: 93px; left: 361px; top: 188px; }
+  .box1 .app8 { width: 75px; height: 75px; left: 311px; top: 101px; }
+  .box1 .app9 { width: 64px; height: 48px; left: 292px; top: 255px; }
+  
+  .box1 .title {
+    font-size: 42px;
+  }
+  
+  .box1 .subtitle {
+    font-size: 22px;
+  }
+  
+  .box1 .description {
+    font-size: 18px;
+  }
+  
+  .box2 .content {
+    padding: 0 30px;
+  }
+  
+  .box2 .content .item {
+    width: 340px;
+    height: 280px;
+  }
+  
+  .box3 .right,
+  .box4 .right {
+    width: 480px;
+  }
+  
+  .box3 .right .title,
+  .box4 .right .title {
+    font-size: 38px;
+  }
+  
+  .advantage .list {
+    width: 960px;
+    height: 540px;
+  }
+  
+  .advantage .item {
+    width: 400px;
+    height: 220px;
+  }
+  
+  .why-chose-us .content {
+    width: 1200px;
+  }
+  
+  .why-chose-us .item {
+    width: 360px;
+  }
+  
+  .box6 {
+    gap: 60px;
+  }
+  
+  .box6 .right {
+    width: 660px;
+  }
+  
+  .box6 .right .item {
+    width: 660px;
+  }
+}
+
+/* 小屏幕 (768px - 1024px) 平板 */
+@media screen and (max-width: 1024px) {
+  .nav {
+    padding: 0 20px;
+    height: 80px;
+  }
+  
+  .nav_logo img {
+    max-height: 70px;
+  }
+  
+  .nav_link {
+    gap: 15px;
+    padding-left: 30px;
+  }
+  
+  .box1 {
+    padding-top: 80px;
+  }
+  
+  .box1 .container {
+    width: 100%;
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+  
+  .box1 .left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .box1 .right {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  
+  /* 调整图标位置 - 平板尺寸 600px宽×500px高 */
+  .box1 .app1 { width: 67px; height: 67px; left: 180px; top: 160px; }
+  .box1 .app2 { width: 80px; height: 80px; left: 167px; top: 314px; }
+  .box1 .app3 { width: 80px; height: 80px; left: 227px; top: 207px; }
+  .box1 .app4 { width: 80px; height: 80px; left: 347px; top: 307px; }
+  .box1 .app5 { width: 80px; height: 80px; left: 80px; top: 200px; }
+  .box1 .app6 { width: 80px; height: 80px; left: 120px; top: 93px; }
+  .box1 .app7 { width: 100px; height: 100px; left: 387px; top: 187px; }
+  .box1 .app8 { width: 80px; height: 80px; left: 333px; top: 100px; }
+  .box1 .app9 { width: 68px; height: 47px; left: 313px; top: 253px; }
+  
+  .box1 .title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .box1 .subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .box1 .description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .box2 .title {
+    font-size: 48px;
+  }
+  
+  .box2 .content {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .box2 .content .item {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .box2 .content .line {
+    width: 184px;
+    height: 8px;
+    margin: 0;
+    align-self: center;
+  }
+  
+  .box2 .content .line:last-child {
+    display: block;
+  }
+  
+  .box3,
+  .box4 {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .box3 .left,
+  .box4 .left {
+    margin: 30px 0 0 0 !important;
+    order: 2;
+    transform: none !important;
+  }
+  
+  .box3 .right,
+  .box4 .right {
+    order: 1;
+    width: 100%;
+    max-width: 600px;
+    min-height: auto;
+    transform: none !important;
+  }
+  
+  .box3 .left img,
+  .box4 .left img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .box3.animation .left,
+  .box4.animation .left,
+  .box3.animation .right,
+  .box4.animation .right {
+    transform: none !important;
+  }
+  
+  .advantage .head {
+    font-size: 48px;
+  }
+  
+  .advantage .head::after {
+    width: 200px;
+    height: 8px;
+    bottom: 8px;
+  }
+  
+  .advantage .list {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 0 20px;
+    position: static;
+  }
+  
+  .advantage .item {
+    position: relative !important;
+    width: 100% !important;
+    height: 220px;
+  }
+  
+  .advantage .item .title,
+  .advantage .item .msg {
+    position: absolute;
+  }
+  
+  .why-chose-us .content {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px 30px;
+  }
+  
+  .why-chose-us .list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .why-chose-us .item {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .box5 {
+    height: auto;
+    padding: 80px 0;
+  }
+  
+  .box6 {
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 40px;
+  }
+  
+  .box6 .left {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding-top: 0;
+  }
+  
+  .box6 .right {
+    width: 100%;
+    max-width: 660px;
+  }
+  
+  .box6 .right .item {
+    width: 100%;
+  }
+  
+  .contact-fixed {
+    right: 20px;
+    bottom: 80px;
+    gap: 12px;
+  }
+  
+  .contact-fixed .contact-item {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contact-fixed .wechat .qrcode {
+    right: 60px;
+    width: 180px;
+  }
+}
+
+/* 手机屏幕 (480px - 768px) */
+@media screen and (max-width: 768px) {
+  .nav {
+    height: 70px;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .nav_logo {
+    margin-bottom: 10px;
+  }
+  
+  .nav_logo img {
+    max-height: 50px;
+  }
+  
+  .nav_link {
+    padding-left: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav_link a {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  .box1 {
+    padding-top: 150px;
+  }
+  
+  .box1 .container {
+    padding: 30px 20px;
+  }
+  
+  .box1 .right {
+    width: 100%;
+    max-width: 450px;
+    height: 380px;
+  }
+  
+  /* 调整图标位置 - 手机尺寸 450px宽×380px高 */
+  .box1 .app1 { width: 50px; height: 50px; left: 135px; top: 130px; }
+  .box1 .app2 { width: 60px; height: 60px; left: 125px; top: 255px; }
+  .box1 .app3 { width: 60px; height: 60px; left: 170px; top: 168px; }
+  .box1 .app4 { width: 60px; height: 60px; left: 260px; top: 249px; }
+  .box1 .app5 { width: 60px; height: 60px; left: 60px; top: 163px; }
+  .box1 .app6 { width: 60px; height: 60px; left: 90px; top: 76px; }
+  .box1 .app7 { width: 75px; height: 75px; left: 290px; top: 152px; }
+  .box1 .app8 { width: 60px; height: 60px; left: 250px; top: 81px; }
+  .box1 .app9 { width: 51px; height: 36px; left: 235px; top: 206px; }
+  
+  .box1 .title {
+    font-size: 28px;
+  }
+  
+  .box1 .subtitle {
+    font-size: 18px;
+  }
+  
+  .box1 .description {
+    font-size: 14px;
+  }
+  
+  .box2 .title {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+  
+  .box2 .subTitle {
+    font-size: 20px;
+  }
+  
+  .box2 .content .item {
+    padding: 20px;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .box2 .content .item .head {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .box2 .content .item .message {
+    font-size: 16px;
+  }
+  
+  .box3 .right .title,
+  .box4 .right .title {
+    font-size: 32px;
+  }
+  
+  .box3 .right .subTitle,
+  .box4 .right .subTitle {
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  .box3 .right,
+  .box4 .right {
+    text-align: center;
+  }
+  
+  .advantage {
+    padding: 50px 0;
+  }
+  
+  .advantage .head {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+  
+  .advantage .head::after {
+    width: 150px;
+    height: 6px;
+    bottom: 5px;
+  }
+  
+  .advantage .list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .advantage .item {
+    height: 260px;
+    position: relative !important;
+  }
+  
+  .advantage .item .title {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    font-size: 20px;
+    position: absolute;
+  }
+  
+  .advantage .item .msg {
+    top: 60px;
+    left: 20px;
+    right: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    position: absolute;
+  }
+  
+  .why-chose-us {
+    padding: 50px 0;
+  }
+  
+  .why-chose-us .content {
+    padding: 30px 20px;
+    height: auto;
+  }
+  
+  .why-chose-us .title .text1 {
+    font-size: 11px;
+  }
+  
+  .why-chose-us .title > div:nth-child(2),
+  .why-chose-us .title > div:nth-child(3) {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  .why-chose-us .item {
+    padding: 30px;
+    height: auto;
+  }
+  
+  .box5 {
+    padding: 60px 0;
+  }
+  
+  .box5 .title {
+    font-size: 36px;
+  }
+  
+  .box5 .item {
+    width: 320px;
+  }
+  
+  .box5 .item .message {
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .box5 .item .person {
+    width: 100%;
+  }
+  
+  .box6 .left .title {
+    font-size: 36px;
+  }
+  
+  .box6 .right .item {
+    height: 80px;
+    padding: 0 20px;
+  }
+  
+  .box6 .right .item .text {
+    font-size: 18px;
+  }
+  
+  .contact-fixed {
+    right: 15px;
+    bottom: 70px;
+  }
+  
+  .contact-fixed .contact-item {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .contact-fixed .wechat .qrcode {
+    right: 55px;
+    width: 160px;
+    padding: 12px;
+  }
+}
+
+/* 小手机屏幕 (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .nav {
+    height: auto;
+  }
+  
+  .nav_link {
+    margin: 5px 0;
+  }
+  
+  .nav_link a {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .box1 {
+    padding-top: 180px;
+  }
+  
+  .box1 .right {
+    max-width: 320px;
+    height: 300px;
+  }
+  
+  /* 调整图标位置 - 小手机尺寸 320px宽×300px高 */
+  .box1 .app1 { width: 36px; height: 36px; left: 96px; top: 103px; }
+  .box1 .app2 { width: 43px; height: 43px; left: 89px; top: 202px; }
+  .box1 .app3 { width: 43px; height: 43px; left: 121px; top: 133px; }
+  .box1 .app4 { width: 43px; height: 43px; left: 185px; top: 197px; }
+  .box1 .app5 { width: 43px; height: 43px; left: 43px; top: 129px; }
+  .box1 .app6 { width: 43px; height: 43px; left: 64px; top: 60px; }
+  .box1 .app7 { width: 53px; height: 53px; left: 207px; top: 120px; }
+  .box1 .app8 { width: 43px; height: 43px; left: 178px; top: 64px; }
+  .box1 .app9 { width: 36px; height: 25px; left: 167px; top: 163px; }
+  
+  .box1 .title {
+    font-size: 24px;
+  }
+  
+  .box1 .subtitle {
+    font-size: 16px;
+  }
+  
+  .box1 .description {
+    font-size: 13px;
+  }
+  
+  .box1 .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .box2 .title {
+    font-size: 28px;
+  }
+  
+  .box2 .subTitle {
+    font-size: 18px;
+  }
+  
+  .box2 .content .item {
+    height: 140px;
+  }
+  
+  .box2 .content .item .head {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .box2 .content .item .message {
+    font-size: 14px;
+  }
+  
+  .box3 .right .title,
+  .box4 .right .title {
+    font-size: 26px;
+  }
+  
+  .box3 .right .tips,
+  .box4 .right .tips {
+    font-size: 14px;
+  }
+  
+  .box3 .right .subTitle,
+  .box4 .right .subTitle {
+    font-size: 14px;
+  }
+  
+  .box3 .right,
+  .box4 .right {
+    text-align: center;
+  }
+  
+  .box3 .right .btn,
+  .box4 .right .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .advantage .head {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .advantage .head::after {
+    width: 120px;
+    height: 5px;
+    bottom: 3px;
+  }
+  
+  .advantage .item {
+    height: 280px;
+    position: relative !important;
+  }
+  
+  .advantage .item .title {
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+  }
+  
+  .advantage .item .msg {
+    font-size: 15px;
+    top: 60px;
+    left: 20px;
+    right: 20px;
+    line-height: 1.7;
+    position: absolute;
+  }
+  
+  .why-chose-us .title > div:nth-child(2),
+  .why-chose-us .title > div:nth-child(3) {
+    font-size: 28px;
+  }
+  
+  .why-chose-us .item {
+    padding: 25px;
+  }
+  
+  .why-chose-us .item .num {
+    font-size: 32px;
+  }
+  
+  .why-chose-us .item .text {
+    font-size: 14px;
+  }
+  
+  .box5 .title {
+    font-size: 28px;
+  }
+  
+  .box5 .item {
+    width: 280px;
+  }
+  
+  .box5 .item .message {
+    font-size: 16px;
+  }
+  
+  .box5 .item .person .info .name {
+    font-size: 18px;
+  }
+  
+  .box5 .item .person .info .des {
+    font-size: 15px;
+  }
+  
+  .box6 .left .title {
+    font-size: 28px;
+  }
+  
+  .box6 .left .subTitle {
+    font-size: 14px;
+  }
+  
+  .box6 .left .btn {
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
+  }
+  
+  .box6 .right {
+    gap: 12px;
+  }
+  
+  .box6 .right .item {
+    height: 70px;
+    padding: 0 15px;
+  }
+  
+  .box6 .right .item img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .box6 .right .item .text {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .contact-fixed {
+    right: 10px;
+    bottom: 60px;
+    gap: 10px;
+  }
+  
+  .contact-fixed .contact-item {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .contact-fixed .wechat .qrcode {
+    right: 50px;
+    width: 140px;
+    padding: 10px;
+  }
+}
