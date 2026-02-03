@@ -1,7 +1,4 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-  publicPath:
-    process.env.NODE_ENV === "production"
-      ? "/repository-name/" // GitHub 仓库名
-      : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/my-vue/" : "/",
 });
