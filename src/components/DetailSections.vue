@@ -12,7 +12,7 @@
           IP设备与海外专线加速，致力于为跨境人解决多账号防
           关联与账号矩阵安全运营问题
         </div>
-        <div class="btn">联系我们</div>
+        <a href="https://ai-matrix.zhuliuhuoke.com/cooperation" target="_blank" class="btn">联系我们</a>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
           如果把AI Cloud RPA比做人手的话，ChatGPT就是人脑
           人手+人脑，便有了无限可能的想象空间在您的自动化流程脚本中，可以通过ChatGPT生成智能评论，可以对抓取的数据通过ChatGPT进行智能判断与分析，机器人不仅能够完成枯燥、重复的工作，更能够帮助您智能的工作
         </div>
-        <div class="btn">联系我们</div>
+        <a href="https://ai-matrix.zhuliuhuoke.com/cooperation" target="_blank" class="btn">联系我们</a>
       </div>
       <div class="left">
         <img src="../assets/images/box4-CylWf_Oz.png" alt="" />
@@ -45,7 +45,7 @@
           达人矩阵生态，实现线上互联网霸屏，对建立客户心
           智效果明显，通过线上多平台矩阵体系，建立属于你 的互联网商业流量闭环。
         </div>
-        <div class="btn">联系我们</div>
+        <a href="https://ai-matrix.zhuliuhuoke.com/cooperation" target="_blank" class="btn">联系我们</a>
       </div>
     </div>
 
@@ -62,7 +62,7 @@
           爆款文案，新鲜创意视频统统一键解决，提高内容生产
           效率，提升营销效率，解决您在社媒上营销的后顾之忧。
         </div>
-        <div class="btn">联系我们</div>
+        <a href="https://ai-matrix.zhuliuhuoke.com/cooperation" target="_blank" class="btn">联系我们</a>
       </div>
       <div class="left">
         <img src="../assets/images/box4-2-fZsZ3kHz.png" alt="" />

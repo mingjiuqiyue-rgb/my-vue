@@ -19,7 +19,7 @@
           ><div>WhatsApp：+86 135 5461 9576</div>
         </a>
         <a
-          href="https://ai-matrix.zhuliuhuoke.com/cooperation"
+          href="https://ai-matrix.zhuliuhuoke.com/"
           target="_blank"
           class="btn4"
           >WS营销系统</a
