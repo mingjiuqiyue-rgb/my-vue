@@ -2,7 +2,6 @@
   "name": "landing_page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/mingjiuqiyue-rgb/my-vue",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
