@@ -984,3 +984,34 @@
     padding: 10px;
   }
 }
+
+/* 超小手机屏幕 (320px - 400px) */
+@media screen and (max-width: 400px) {
+  /* 调整图标位置和尺寸 - 超小手机 */
+  .box1 .app1 { width: 32px; height: 32px; left: 112px; }
+  .box1 .app2 { width: 40px; height: 40px; left: 104px; }
+  .box1 .app3 { width: 40px; height: 40px; left: 140px; }
+  .box1 .app4 { width: 40px; height: 40px; left: 212px; }
+  .box1 .app5 { width: 40px; height: 40px; left: 52px; }
+  .box1 .app6 { width: 40px; height: 40px; left: 76px; }
+  .box1 .app7 { width: 50px; height: 50px; left: 236px; }
+  .box1 .app8 { width: 40px; height: 40px; left: 204px; }
+  .box1 .app9 { width: 34px; height: 24px; left: 192px; }
+  
+  /* 优势部分 - 增加盒子高度以容纳内容 */
+  .advantage .item {
+    height: 320px;
+  }
+  
+  .advantage .item .title {
+    font-size: 18px;
+    line-height: 1.4;
+    white-space: normal;
+  }
+  
+  .advantage .item .msg {
+    font-size: 13px;
+    line-height: 1.6;
+    top: 65px;
+  }
+}
