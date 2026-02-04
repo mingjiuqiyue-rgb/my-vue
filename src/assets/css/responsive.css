@@ -48,6 +48,11 @@
 
 /* 中等屏幕 (1024px - 1440px) */
 @media screen and (max-width: 1440px) {
+  .nav {
+    position: relative;
+    z-index: 100;
+  }
+  
   .box1 .container {
     width: 1200px;
     margin: 0 auto;
@@ -62,6 +67,7 @@
   .box1 .right {
     width: 560px;
     height: 470px;
+    position: relative;
   }
   
   /* 调整图标位置以适应缩小的容器 - 560px宽×470px高 */
@@ -74,6 +80,10 @@
   .box1 .app7 { width: 93px; height: 93px; left: 361px; top: 188px; }
   .box1 .app8 { width: 75px; height: 75px; left: 311px; top: 101px; }
   .box1 .app9 { width: 64px; height: 48px; left: 292px; top: 255px; }
+  
+  .contact-fixed {
+    z-index: 50;
+  }
   
   .box1 .title {
     font-size: 42px;
@@ -116,6 +126,18 @@
     height: 220px;
   }
   
+  .advantage .item .title {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: normal;
+    white-space: nowrap;
+  }
+  
+  .advantage .item .msg {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
   .why-chose-us .content {
     width: 1200px;
   }
@@ -141,7 +163,11 @@
 @media screen and (max-width: 1024px) {
   .nav {
     padding: 0 20px;
-    height: 80px;
+    height: 100px;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .nav_logo img {
@@ -151,40 +177,74 @@
   .nav_link {
     gap: 15px;
     padding-left: 30px;
+    flex-wrap: wrap;
   }
   
   .box1 {
-    padding-top: 80px;
+    padding-top: 120px;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 0;
+    overflow: visible;
+    position: relative;
   }
   
   .box1 .container {
     width: 100%;
     flex-direction: column;
-    padding: 50px 30px;
+    padding: 30px 30px 0;
+    min-height: auto;
+    height: auto;
+  }
+  
+  .box2 {
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    margin-top: 50px;
   }
   
   .box1 .left {
     width: 100%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    min-height: auto;
   }
   
   .box1 .right {
-    width: 600px;
-    height: 500px;
+    width: 700px;
+    height: 580px;
     margin: 0 auto;
+    flex-shrink: 0;
+    position: relative;
   }
   
-  /* 调整图标位置 - 平板尺寸 600px宽×500px高 */
-  .box1 .app1 { width: 67px; height: 67px; left: 180px; top: 160px; }
-  .box1 .app2 { width: 80px; height: 80px; left: 167px; top: 314px; }
-  .box1 .app3 { width: 80px; height: 80px; left: 227px; top: 207px; }
-  .box1 .app4 { width: 80px; height: 80px; left: 347px; top: 307px; }
-  .box1 .app5 { width: 80px; height: 80px; left: 80px; top: 200px; }
-  .box1 .app6 { width: 80px; height: 80px; left: 120px; top: 93px; }
-  .box1 .app7 { width: 100px; height: 100px; left: 387px; top: 187px; }
-  .box1 .app8 { width: 80px; height: 80px; left: 333px; top: 100px; }
-  .box1 .app9 { width: 68px; height: 47px; left: 313px; top: 253px; }
+  .box1 .fade {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+  }
+  
+  .box1 .fade img {
+    width: 700px;
+    height: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* 调整图标位置 - 平板尺寸 700px宽×580px高 */
+  .box1 .app1 { width: 78px; height: 78px; left: 210px; top: 187px; }
+  .box1 .app2 { width: 93px; height: 93px; left: 195px; top: 367px; }
+  .box1 .app3 { width: 93px; height: 93px; left: 265px; top: 243px; }
+  .box1 .app4 { width: 93px; height: 93px; left: 405px; top: 359px; }
+  .box1 .app5 { width: 93px; height: 93px; left: 93px; top: 234px; }
+  .box1 .app6 { width: 93px; height: 93px; left: 140px; top: 109px; }
+  .box1 .app7 { width: 117px; height: 117px; left: 452px; top: 219px; }
+  .box1 .app8 { width: 93px; height: 93px; left: 389px; top: 117px; }
+  .box1 .app9 { width: 80px; height: 56px; left: 366px; top: 296px; }
   
   .box1 .title {
     font-size: 36px;
@@ -206,26 +266,21 @@
   }
   
   .box2 .content {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 0 20px;
-    gap: 8px;
+    gap: 15px;
     align-items: center;
+    justify-content: center;
   }
   
   .box2 .content .item {
-    width: 100%;
-    max-width: 500px;
+    width: calc(50% - 8px);
+    max-width: 400px;
   }
   
   .box2 .content .line {
-    width: 184px;
-    height: 8px;
-    margin: 0;
-    align-self: center;
-  }
-  
-  .box2 .content .line:last-child {
-    display: block;
+    display: none;
   }
   
   .box3,
@@ -276,39 +331,59 @@
   
   .advantage .list {
     width: 100%;
+    max-width: 900px;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 20px;
     padding: 0 20px;
     position: static;
+    margin: 0 auto;
   }
   
   .advantage .item {
     position: relative !important;
     width: 100% !important;
-    height: 220px;
+    height: 280px;
   }
   
-  .advantage .item .title,
+  .advantage .item .title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    font-weight: normal;
+    white-space: nowrap;
+  }
+  
   .advantage .item .msg {
     position: absolute;
+    top: 70px;
+    left: 20px;
+    right: 20px;
+    font-size: 15px;
+    line-height: 1.6;
   }
   
   .why-chose-us .content {
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
     padding: 40px 30px;
+    margin: 0 auto;
+    height: auto;
   }
   
   .why-chose-us .list {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
   }
   
   .why-chose-us .item {
     width: 100%;
-    max-width: 500px;
+    height: auto;
+    min-height: 200px;
   }
   
   .box5 {
@@ -342,6 +417,7 @@
     right: 20px;
     bottom: 80px;
     gap: 12px;
+    z-index: 150;
   }
   
   .contact-fixed .contact-item {
@@ -358,13 +434,24 @@
 /* 手机屏幕 (480px - 768px) */
 @media screen and (max-width: 768px) {
   .nav {
-    height: 70px;
+    height: auto;
+    min-height: 150px;
     flex-direction: column;
+    flex-wrap: nowrap;
     padding: 10px;
+    position: relative;
+    z-index: 100;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
   
   .nav_logo {
     margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   
   .nav_logo img {
@@ -376,6 +463,7 @@
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    display: flex;
   }
   
   .nav_link a {
@@ -384,29 +472,58 @@
   }
   
   .box1 {
-    padding-top: 150px;
+    padding-top: 170px;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 0;
+    overflow: visible;
+    position: relative;
   }
   
   .box1 .container {
-    padding: 30px 20px;
+    padding: 20px 20px 0;
+    min-height: auto;
+    height: auto;
+  }
+  
+  .box1 .left {
+    min-height: auto;
   }
   
   .box1 .right {
     width: 100%;
-    max-width: 450px;
-    height: 380px;
+    max-width: 550px;
+    height: 460px;
+    flex-shrink: 0;
+    position: relative;
   }
   
-  /* 调整图标位置 - 手机尺寸 450px宽×380px高 */
-  .box1 .app1 { width: 50px; height: 50px; left: 135px; top: 130px; }
-  .box1 .app2 { width: 60px; height: 60px; left: 125px; top: 255px; }
-  .box1 .app3 { width: 60px; height: 60px; left: 170px; top: 168px; }
-  .box1 .app4 { width: 60px; height: 60px; left: 260px; top: 249px; }
-  .box1 .app5 { width: 60px; height: 60px; left: 60px; top: 163px; }
-  .box1 .app6 { width: 60px; height: 60px; left: 90px; top: 76px; }
-  .box1 .app7 { width: 75px; height: 75px; left: 290px; top: 152px; }
-  .box1 .app8 { width: 60px; height: 60px; left: 250px; top: 81px; }
-  .box1 .app9 { width: 51px; height: 36px; left: 235px; top: 206px; }
+  .box1 .fade {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+  }
+  
+  .box1 .fade img {
+    width: 550px;
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* 调整图标位置 - 手机尺寸 550px宽×460px高 */
+  .box1 .app1 { width: 61px; height: 61px; left: 165px; top: 149px; }
+  .box1 .app2 { width: 73px; height: 73px; left: 153px; top: 291px; }
+  .box1 .app3 { width: 73px; height: 73px; left: 208px; top: 193px; }
+  .box1 .app4 { width: 73px; height: 73px; left: 318px; top: 285px; }
+  .box1 .app5 { width: 73px; height: 73px; left: 73px; top: 186px; }
+  .box1 .app6 { width: 73px; height: 73px; left: 110px; top: 87px; }
+  .box1 .app7 { width: 92px; height: 92px; left: 355px; top: 174px; }
+  .box1 .app8 { width: 73px; height: 73px; left: 306px; top: 93px; }
+  .box1 .app9 { width: 63px; height: 44px; left: 288px; top: 235px; }
   
   .box1 .title {
     font-size: 28px;
@@ -429,12 +546,32 @@
     font-size: 20px;
   }
   
+  .box2 .content {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 8px;
+    align-items: center;
+  }
+  
   .box2 .content .item {
+    width: 100%;
+    max-width: 500px;
     padding: 20px;
     height: 140px;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  
+  .box2 .content .line {
+    width: 184px;
+    height: 8px;
+    margin: 0;
+    align-self: center;
+  }
+  
+  .box2 .content .line:last-child {
+    display: block;
   }
   
   .box2 .content .item .head {
@@ -494,6 +631,8 @@
     right: 20px;
     font-size: 20px;
     position: absolute;
+    font-weight: normal;
+    white-space: nowrap;
   }
   
   .advantage .item .msg {
@@ -512,6 +651,22 @@
   .why-chose-us .content {
     padding: 30px 20px;
     height: auto;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .why-chose-us .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .why-chose-us .item {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 30px;
   }
   
   .why-chose-us .title .text1 {
@@ -522,11 +677,6 @@
   .why-chose-us .title > div:nth-child(3) {
     font-size: 36px;
     line-height: 1.2;
-  }
-  
-  .why-chose-us .item {
-    padding: 30px;
-    height: auto;
   }
   
   .box5 {
@@ -597,23 +747,29 @@
   
   .box1 {
     padding-top: 180px;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 0;
+    overflow: visible;
+    position: relative;
   }
   
   .box1 .right {
-    max-width: 320px;
-    height: 300px;
+    max-width: 450px;
+    width: 100%;
+    height: 380px;
   }
   
-  /* 调整图标位置 - 小手机尺寸 320px宽×300px高 */
-  .box1 .app1 { width: 36px; height: 36px; left: 96px; top: 103px; }
-  .box1 .app2 { width: 43px; height: 43px; left: 89px; top: 202px; }
-  .box1 .app3 { width: 43px; height: 43px; left: 121px; top: 133px; }
-  .box1 .app4 { width: 43px; height: 43px; left: 185px; top: 197px; }
-  .box1 .app5 { width: 43px; height: 43px; left: 43px; top: 129px; }
-  .box1 .app6 { width: 43px; height: 43px; left: 64px; top: 60px; }
-  .box1 .app7 { width: 53px; height: 53px; left: 207px; top: 120px; }
-  .box1 .app8 { width: 43px; height: 43px; left: 178px; top: 64px; }
-  .box1 .app9 { width: 36px; height: 25px; left: 167px; top: 163px; }
+  /* 调整图标位置 - 小手机尺寸 450px宽×380px高 */
+  .box1 .app1 { width: 40px; height: 40px; left: 132px; top: 156px; }
+  .box1 .app2 { width: 48px; height: 48px; left: 124px; top: 252px; }
+  .box1 .app3 { width: 48px; height: 48px; left: 160px; top: 185px; }
+  .box1 .app4 { width: 48px; height: 48px; left: 232px; top: 247px; }
+  .box1 .app5 { width: 48px; height: 48px; left: 72px; top: 180px; }
+  .box1 .app6 { width: 48px; height: 48px; left: 96px; top: 116px; }
+  .box1 .app7 { width: 60px; height: 60px; left: 256px; top: 172px; }
+  .box1 .app8 { width: 48px; height: 48px; left: 224px; top: 120px; }
+  .box1 .app9 { width: 41px; height: 29px; left: 212px; top: 212px; }
   
   .box1 .title {
     font-size: 24px;
@@ -641,6 +797,8 @@
   }
   
   .box2 .content .item {
+    width: 100%;
+    max-width: 500px;
     height: 140px;
   }
   
@@ -701,6 +859,8 @@
     left: 20px;
     right: 20px;
     position: absolute;
+    font-weight: normal;
+    white-space: nowrap;
   }
   
   .advantage .item .msg {
@@ -715,6 +875,19 @@
   .why-chose-us .title > div:nth-child(2),
   .why-chose-us .title > div:nth-child(3) {
     font-size: 28px;
+  }
+  
+  .why-chose-us .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .why-chose-us .title > div:nth-child(3):before {
+    width: 60px;
+    height: 6px;
+    bottom: 10px;
   }
   
   .why-chose-us .item {
@@ -783,7 +956,7 @@
   }
   
   .contact-fixed {
-    right: 10px;
+    right: 30px;
     bottom: 60px;
     gap: 10px;
   }

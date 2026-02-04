@@ -77,9 +77,10 @@
   left: 30px;
   right: 30px;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: normal;
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
 }
 
 .advantage .item .msg {
